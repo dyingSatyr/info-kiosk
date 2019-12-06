@@ -1,0 +1,14 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "Info Kiosk API",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Boris Grabovac",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
