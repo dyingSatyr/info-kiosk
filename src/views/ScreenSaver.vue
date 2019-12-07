@@ -2,7 +2,7 @@
 	<div id="ss">
 		<img class="logo" src="/images/mclogo.png" alt="McDonalds" />
 		<p class="intro-text">Order & Pay Here</p>
-		<a href="/menu" class="call-to-action">Touch to start</a>
+		<router-link class="call-to-action" to="/menu">Touch to start</router-link>
 	</div>
 </template>
 

@@ -3,6 +3,7 @@
 		<Header />
 		<Menu :meals="meals" />
 		<Cart />
+		<router-link to="/">Back to screensaver</router-link>
 	</div>
 </template>
 
