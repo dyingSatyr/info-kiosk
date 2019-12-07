@@ -1,33 +1,12 @@
 <template>
 	<div id="app">
-		<Header />
-		<Menu :meals="meals" />
-		<Cart />
+		<router-view></router-view>
 	</div>
 </template>
 
 <script>
-import Menu from './components/Menu'
-import Header from './components/Header'
-import Cart from './components/Cart'
-
-import data from './data/menu'
-const { meals, beverages, topings } = data
-
 export default {
-	name: 'app',
-	components: {
-		Header,
-		Menu,
-		Cart
-	},
-	data: function() {
-		return {
-			meals,
-			beverages,
-			topings
-		}
-	}
+	name: 'app'
 }
 </script>
 
