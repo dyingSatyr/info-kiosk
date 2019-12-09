@@ -2,11 +2,14 @@
   <div id="menu-container">
     <Header />
     <div id="main-content">
-      <Categories :meals="meals" />
-      <Menu :meals="meals" />
+      <Categories
+        :categories="categories"
+        :selectedCategory="selectedCategory"
+        @change-category="setSelectedCategory"
+      />
+      <Menu :fullMenu="fullMenu" :selectedCategory="selectedCategory" />
     </div>
     <Cart />
-    <router-link to="/">Back to screensaver</router-link>
   </div>
 </template>
 
@@ -16,9 +19,8 @@ import Header from "@/components/Header";
 import Cart from "@/components/Cart";
 import Categories from "@/components/Categories";
 
-import data from "@/data/menu";
-const { meals, beverages, sides } = data;
-
+import fullMenu from "@/data/menu";
+import categories from "@/data/categories";
 export default {
   name: "app",
   components: {
@@ -30,10 +32,16 @@ export default {
   data: function() {
     return {
       idle: true,
-      meals,
-      beverages,
-      sides
+      fullMenu,
+      categories,
+      selectedCategory: 1
     };
+  },
+  methods: {
+    setSelectedCategory(payload) {
+      this.selectedCategory = payload;
+      console.log("setting");
+    }
   }
 };
 </script>

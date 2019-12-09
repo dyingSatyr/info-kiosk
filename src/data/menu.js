@@ -1,5 +1,5 @@
-export default {
-	meals: [
+export default [
+	[
 		{
 			id: 1,
 			name: 'Big Mac',
@@ -61,7 +61,7 @@ export default {
 			price: 5.49
 		}
 	],
-	chickenAndSandwiches: [
+	[
 		{
 			id: 1,
 			name: 'McChicken',
@@ -83,7 +83,7 @@ export default {
 			price: 7.35
 		}
 	],
-	sides: [
+	[
 		{
 			id: 1,
 			name: 'Small Fries',
@@ -97,7 +97,7 @@ export default {
 			price: 3.05
 		}
 	],
-	beverages: [
+	[
 		{
 			id: 1,
 			name: 'Coca Cola',
@@ -107,4 +107,4 @@ export default {
 			price: 1.99
 		}
 	]
-}
+]

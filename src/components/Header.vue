@@ -1,25 +1,24 @@
 <template>
-	<header>
-		<Clock />
-	</header>
+  <header>
+    <Clock />
+  </header>
 </template>
 
 <script>
-import Clock from './Clock'
+import Clock from "./Clock";
 
 export default {
-	name: 'Header',
-	components: {
-		Clock
-	}
-}
+  name: "Header",
+  components: {
+    Clock
+  }
+};
 </script>
 
 <style scoped>
 header {
-	background: #333;
-	color: #fff;
-	padding: 20px;
-	height: 100px;
+  background: #333;
+  color: #fff;
+  height: 5vh;
 }
 </style>
